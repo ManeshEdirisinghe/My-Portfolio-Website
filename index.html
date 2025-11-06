@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    
+
+    <!-- -----------------------Nav Bar----------------------- -->
+
+    <header>
+        <nav class="fixed top-0 left-0 right-0 z-50 w-full bg-white dark:bg-gray-900 shadow-md">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="./assets/img/myLogo.png" class="h-12" alt="My Logo" width="50" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-[#1E90FF]">Manesh
+                        Edirisinghe</span>
+                </a>
+                <button data-collapse-toggle="navbar-solid-bg" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-solid-bg" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
+                    <ul
+                        class="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
+                        <li>
+                            <a href="./index.html"
+                                class="block py-2 px-3 md:p-0 text-black hover:text-[#F7567C] dark:text-white"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about"
+                                class="block py-2 px-3 md:p-0 text-black hover:text-[#F7567C] dark:text-white">About</a>
+                        </li>
+                        <li>
+                            <a href="#skills"
+                                class="block py-2 px-3 md:p-0 text-black hover:text-[#F7567C] dark:text-white">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#projects"
+                                class="block py-2 px-3 md:p-0 text-black hover:text-[#F7567C] dark:text-white">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#services"
+                                class="block py-2 px-3 md:p-0 text-black hover:text-[#F7567C] dark:text-white">Services</a>
+                        </li>
+                        <li>
+                            <a href="./contactMe.html"
+                                class="block py-2 px-3 md:p-0 text-black hover:text-[#F7567C] dark:text-white">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <div class="titDiv ">
+        <h2 class="subHead_1">Manesh's</h2>
+        <h1 class="subHead_2">PORTFOLIO</h1>
+        <img class="profilePic" src="./assets/img/profilepic.png" alt="" width="450">
+    </div>
+
+    <div id="flashlight"></div>
+    <div id="cursor-circle"></div>
+
+
+
+    <div class="des">
+        <hr class="hr_1">
+        <h1 class="hiTit">Hey, I'm Manesh 👋🏻</h1><br>
+        <h1 class="animate-bounce">
+            <span class="tit_1 ">Aspiring</span>
+            <span class="tit_2 ">UI/UX Designer &<br> Software Engineer </span>
+        </h1>
+
+        <blockquote class="text-xl italic font-semibold text-gray-900 dark:text-white abtSvg">
+            <svg class="w-5 h-5 text-gray-400 dark:text-gray-600 mb-4" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                <path
+                    d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+            </svg>
+        </blockquote>
+        <P class="abtPara">I enjoy building practical solutions with Java and love turning ideas into working code.</P>
+
+    </div>
+
+    <!-- -----------------------About----------------------- -->
+
+    <br><br><br><br><br><br>
+    <section class="bg-white dark:bg-gray-900 py-20 px-6 md:px-24 boxSize" id="about">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-16">About Me</h2>
+
+            <div class="flex flex-col md:flex-row gap-10 justify-center items-stretch">
+
+                <!-- Who I Am -->
+                <div
+                    class="bg-blue-500 dark:bg-blue-800 p-8 rounded-xl shadow-md flex-1 transform transition duration-300 ease-in-out hover:scale-105 cursor-pointer">
+                    <h3 class="text-lg md:text-xl font-bold text-pink-200 dark:text-[#F7567C] mb-3">Who I Am</h3>
+                    <p class="text-white dark:text-gray-200 text-sm md:text-base font-medium">
+                        I'm Manesh Edirisinghe, an undergraduate in Bachelor of Information Technology at the University
+                        of Colombo School of Computing (UCSC) and hold a Diploma in Information Technology. I’m a
+                        passionate Software Engineer and UI/UX Designer, dedicated to creating innovative, user-centered
+                        digital experiences and real-world software solutions.
+                    </p>
+                </div>
+
+                <!-- What I Do -->
+                <div
+                    class="bg-blue-500 dark:bg-blue-800 p-8 rounded-xl shadow-md flex-1 transform transition duration-300 ease-in-out hover:scale-105 cursor-pointer">
+                    <h3 class="text-lg md:text-xl font-bold text-pink-200 dark:text-[#F7567C] mb-3">What I Do</h3>
+                    <p class="text-white dark:text-gray-200 text-sm md:text-base font-medium">
+                        I specialize in Java programming and GUI development using Java Swing, creating intuitive and
+                        efficient desktop applications. My portfolio includes projects such as a iHungry Burgershop and
+                        a School Website, reflecting my ability to combine functionality with clean design. I’m deeply
+                        passionate about problem-solving, UI/UX design, and continuously exploring modern frameworks and
+                        tools to craft seamless digital experiences.
+                    </p>
+                </div>
+
+                <!-- My Goals -->
+                <div
+                    class="bg-blue-500 dark:bg-blue-800 p-8 rounded-xl shadow-md flex-1 transform transition duration-300 ease-in-out hover:scale-105 cursor-pointer">
+                    <h3 class="text-lg md:text-xl font-bold text-pink-200 dark:text-[#F7567C] mb-3">My Goals</h3>
+                    <p class="text-white dark:text-gray-200 text-sm md:text-base font-medium">
+                        My goal is to become a skilled Full-Stack Software Engineer and UI/UX Designer, capable of
+                        crafting impactful systems from front-end to back-end. I’m passionate about creating
+                        user-centered designs, seamless interfaces, and efficient backend solutions. I’m dedicated to
+                        continuous learning, innovative thinking, and turning ideas into meaningful digital experiences.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- -----------------------------Skills---------------------------------- -->
+
+    <br><br><br><br><br><br><br>
+
+    <section class="bg-white dark:bg-gray-900 py-16 px-6 md:px-20 boxSize" id="skills">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-12">My Skills</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Skill Item -->
+                <div
+                    class="p-4 bg-[#dbe4f0] rounded-lg shadow-md transform transition duration-300 ease-in-out hover:scale-105 cursor-pointer">
+                    <p class="text-sm font-semibold text-gray-800 dark:text-gray-900 mb-2">Java</p>
+                    <div class="w-full bg-[#9eb8d1] rounded-full h-4">
+                        <div class="bg-black h-4 rounded-full" style="width: 80%"></div>
+                    </div>
+                </div>
+
+                <div
+                    class="p-4 bg-[#dbe4f0] rounded-lg shadow-md transform transition duration-300 ease-in-out hover:scale-105 cursor-pointer">
+                    <p class="text-sm font-semibold text-gray-800 dark:text-gray-900 mb-2">HTML / CSS</p>
+                    <div class="w-full bg-[#9eb8d1] rounded-full h-4">
+                        <div class="bg-black h-4 rounded-full" style="width: 95%"></div>
+                    </div>
+                </div>
+
+                <div
+                    class="p-4 bg-[#dbe4f0] rounded-lg shadow-md transform transition duration-300 ease-in-out hover:scale-105 cursor-pointer">
+                    <p class="text-sm font-semibold text-gray-800 dark:text-gray-900 mb-2">JavaScript</p>
+                    <div class="w-full bg-[#9eb8d1] rounded-full h-4">
+                        <div class="bg-black h-4 rounded-full" style="width: 80%"></div>
+                    </div>
+                </div>
+
+                <div
+                    class="p-4 bg-[#dbe4f0] rounded-lg shadow-md transform transition duration-300 ease-in-out hover:scale-105 cursor-pointer">
+                    <p class="text-sm font-semibold text-gray-800 dark:text-gray-900 mb-2">Tailwind CSS</p>
+                    <div class="w-full bg-[#9eb8d1] rounded-full h-4">
+                        <div class="bg-black h-4 rounded-full" style="width: 75%"></div>
+                    </div>
+                </div>
+
+                <div
+                    class="p-4 bg-[#dbe4f0] rounded-lg shadow-md transform transition duration-300 ease-in-out hover:scale-105 cursor-pointer">
+                    <p class="text-sm font-semibold text-gray-800 dark:text-gray-900 mb-2">Bootstrap</p>
+                    <div class="w-full bg-[#9eb8d1] rounded-full h-4">
+                        <div class="bg-black h-4 rounded-full" style="width: 85%"></div>
+                    </div>
+                </div>
+
+                <div
+                    class="p-4 bg-[#dbe4f0] rounded-lg shadow-md transform transition duration-300 ease-in-out hover:scale-105 cursor-pointer">
+                    <p class="text-sm font-semibold text-gray-800 dark:text-gray-900 mb-2">Figma</p>
+                    <div class="w-full bg-[#9eb8d1] rounded-full h-4">
+                        <div class="bg-black h-4 rounded-full" style="width: 98%"></div>
+                    </div>
+                </div>
+
+                <div
+                    class="p-4 bg-[#dbe4f0] rounded-lg shadow-md transform transition duration-300 ease-in-out hover:scale-105 cursor-pointer">
+                    <p class="text-sm font-semibold text-gray-800 dark:text-gray-900 mb-2">VS Code</p>
+                    <div class="w-full bg-[#9eb8d1] rounded-full h-4">
+                        <div class="bg-black h-4 rounded-full" style="width: 95%"></div>
+                    </div>
+                </div>
+
+                <div
+                    class="p-4 bg-[#dbe4f0] rounded-lg shadow-md transform transition duration-300 ease-in-out hover:scale-105 cursor-pointer">
+                    <p class="text-sm font-semibold text-gray-800 dark:text-gray-900 mb-2">TypeScript</p>
+                    <div class="w-full bg-[#9eb8d1] rounded-full h-4">
+                        <div class="bg-black h-4 rounded-full" style="width: 20%"></div>
+                    </div>
+                </div>
+
+                <div
+                    class="p-4 bg-[#dbe4f0] rounded-lg shadow-md transform transition duration-300 ease-in-out hover:scale-105 cursor-pointer">
+                    <p class="text-sm font-semibold text-gray-800 dark:text-gray-900 mb-2">SQL</p>
+                    <div class="w-full bg-[#9eb8d1] rounded-full h-4">
+                        <div class="bg-black h-4 rounded-full" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- -----------------------------Projects---------------------------------- -->
+
+    <br><br><br><br><br><br><br>
+
+    <section class="bg-white dark:bg-gray-900 py-20 px-6 md:px-20 boxSize" id="projects">
+
+        <div class="text-center mb-16">
+            <h1 class="text-4xl md:text-4xl font-bold">
+                <span class="text-white">My</span>
+                <span class="text-pink-500">Projects</span>
+            </h1>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+
+            <div
+                class="bg-white border border-gray-200 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 dark:bg-gray-700 dark:border-gray-700 flex flex-col">
+                <a href="https://github.com/ManeshEdirisinghe/iHungry-Burger-Shop-Project-with-MVC-">
+                    <img class="rounded-t-lg w-full h-48 object-cover" src="./assets/img/sriLanka.jpg"
+                        alt="Explore Sri Lanka" />
+                </a>
+                <div class="p-5 flex flex-col flex-grow">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">iHungry Burgershop
+                        with MVC
+                    </h5>
+                    <p class="mb-4 text-gray-700 dark:text-gray-300 flex-grow">iHungry Burger is a Java-based burger
+                        ordering system built with the MVC architecture. It features an intuitive Java Swing GUI and
+                        demonstrates strong object-oriented and modular design principles..</p>
+                    <a href="https://github.com/ManeshEdirisinghe/iHungry-Burger-Shop-Project-with-MVC-"
+                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 max-w-max">
+                        Read more
+                        <svg class="w-3.5 h-3.5 ms-2" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+
+            <div
+                class="bg-white border border-gray-200 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 dark:bg-gray-700 dark:border-gray-700 flex flex-col">
+                <a href="https://github.com/ManeshEdirisinghe/Day-of-the-week-Assignment"><img class="rounded-t-lg w-full h-48 object-cover" src="./assets/img/guessingGame.jpg"
+                        alt="Guessing Game" /></a>
+                <div class="p-5 flex flex-col flex-grow">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Day Of The Week
+                        Website</h5>
+                    <p class="mb-4 text-gray-700 dark:text-gray-300 flex-grow">🎯 Day of the Week is a simple HTML, CSS,
+                        and JavaScript project that allows users to enter a date and instantly see which day of the week
+                        it falls on. It showcases basic DOM manipulation, form handling, and interactive UI design.</p>
+                    <a href="https://github.com/ManeshEdirisinghe/Day-of-the-week-Assignment"
+                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 max-w-max">Read
+                        more
+                        <svg class="w-3.5 h-3.5 ms-2" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Student Management System -->
+            <div
+                class="bg-white border border-gray-200 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 dark:bg-gray-700 dark:border-gray-700 flex flex-col">
+                <a href="https://github.com/ManeshEdirisinghe/School-Website-Demo"><img class="rounded-t-lg w-full h-48 object-cover" src="./assets/img/iCETSMS.png"
+                        alt="Student Management System" /></a>
+                <div class="p-5 flex flex-col flex-grow">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">School Website</h5>
+                    <p class="mb-4 text-gray-700 dark:text-gray-300 flex-grow">🎓 School Website is a responsive HTML,
+                        CSS project designed to present school information clearly and attractively. It
+                        includes sections for about, academics, admissions, and contact, showcasing skills in web
+                        design, layout structuring, and responsive UI development.</p>
+                    <a href="https://github.com/ManeshEdirisinghe/School-Website-Demo"
+                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 max-w-max">Read
+                        more
+                        <svg class="w-3.5 h-3.5 ms-2" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <!-- -----------------------My Services----------------------- -->
+
+    <br><br><br><br><br><br><br>
+    <section class="bg-white dark:bg-gray-900 py-20 px-6 md:px-24 boxSize" id="services">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-4xl md:text-4xl font-bold">
+                <span class="text-pink-500">My</span>
+                <span class="text-white">Services</span>
+            </h1><br><br>
+
+            <div class="flex flex-col md:flex-row gap-10 justify-center items-stretch">
+
+
+                <div
+                    class="bg-blue-500 dark:bg-blue-800 p-8 rounded-xl shadow-md flex-1 transform transition duration-300 ease-in-out hover:scale-105 cursor-pointer">
+                    <h3 class="text-lg md:text-xl font-bold text-pink-200 dark:text-[#F7567C] mb-3">Java Application
+                        Development</h3>
+                    <p class="text-white dark:text-gray-200 text-sm md:text-base font-medium">
+                        I specialize in building desktop applications using Java and Java Swing. From student management
+                        systems to defense simulations, I create scalable and user-friendly applications with a strong
+                        object-oriented foundation. I focus on clean architecture, modular code, and performance
+                        optimization.
+                    </p>
+                </div>
+
+
+                <div
+                    class="bg-blue-500 dark:bg-blue-800 p-8 rounded-xl shadow-md flex-1 transform transition duration-300 ease-in-out hover:scale-105 cursor-pointer">
+                    <h3 class="text-lg md:text-xl font-bold text-pink-200 dark:text-[#F7567C] mb-3">Web Development</h3>
+                    <p class="text-white dark:text-gray-200 text-sm md:text-base font-medium">
+                        I design and develop modern, responsive websites using HTML, CSS, JavaScript, and Tailwind CSS.
+                        Whether it’s a personal portfolio or a fully responsive landing page, I ensure great user
+                        experience
+                        and clean, professional interfaces optimized for all devices.
+                    </p>
+                </div>
+
+
+                <div
+                    class="bg-blue-500 dark:bg-blue-800 p-8 rounded-xl shadow-md flex-1 transform transition duration-300 ease-in-out hover:scale-105 cursor-pointer">
+                    <h3 class="text-lg md:text-xl font-bold text-pink-200 dark:text-[#F7567C] mb-3">Data Management with
+                        Data Structures</h3>
+                    <p class="text-white dark:text-gray-200 text-sm md:text-base font-medium">
+                        I have strong experience managing and organizing data using fundamental data structures like
+                        arrays,
+                        linked lists, stacks, and queues. My projects demonstrate the ability to structure and
+                        manipulate
+                        data efficiently, ensuring fast and reliable functionality in both frontend and backend logic.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- -----------------------------Footer---------------------------------- -->
+    <br><br><br><br><br><br><br>
+
+    <footer class="dark:bg-gray-900">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+            <div class="md:flex md:justify-between">
+                <div class="mb-6 md:mb-0">
+                    <a href="https://flowbite.com/" class="flex items-center">
+                        <img src="./assets/img/myLogo.png" class="h-20 me-3 ml-12" />
+                    </a>
+                    <div> <br>
+                        <h2 class="text-2xl font-bold text-white">Manesh Edirisinghe</h2>
+                        <p class="mt-2 text-sm text-white">Aspiring Software Engineer and UI/UX Designer | Portfolio</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase  dark:text-[#1E90FF]">Resources
+                        </h2>
+                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="https://flowbite.com/" class="hover:underline">Flowbite</a>
+                            </li>
+                            <li>
+                                <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-[#1E90FF]">Follow us
+                        </h2>
+                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="https://github.com/ManeshEdirisinghe" class="hover:underline ">Github</a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/manesh-edirisinghe-a39250247"
+                                    class="hover:underline">Linked In</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-[#1E90FF]">Legal</h2>
+                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-200 text">© 2025 <a
+                        href="https://flowbite.com/" class="hover:underline">Manesh Edirisinghe</a>. All Rights
+                    Reserved.
+                </span>
+                <div class="flex mt-4 sm:justify-center sm:mt-0">
+                    <a href="https://www.facebook.com/share/17HXJ7UJsJ/?mibextid=wwXIfr"
+                        class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 8 19">
+                            <path fill-rule="evenodd"
+                                d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">Facebook page</span>
+                    </a>
+                    <a href="https://discord.gg/qQkARx7u"
+                        class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 21 16">
+                            <path
+                                d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
+                        </svg>
+                        <span class="sr-only">Discord community</span>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 17">
+                            <path fill-rule="evenodd"
+                                d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">Twitter page</span>
+                    </a>
+                    <a href="https://github.com/ManeshEdirisinghe"
+                        class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">GitHub account</span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

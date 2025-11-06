@@ -1,0 +1,239 @@
+@import "tailwind.css";
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dancing+Script:wght@400..700&family=Hammersmith+One&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster&family=Onest:wght@100..900&family=Rammetto+One&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dancing+Script:wght@400..700&family=Hammersmith+One&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster&family=Onest:wght@100..900&family=Rammetto+One&family=Rowdies:wght@300;400;700&family=Satisfy&display=swap');
+
+body {
+    margin: 0;
+    background-color: rgb(229, 250, 250);
+}
+
+.titDiv {
+    position: relative;
+    display: inline-block;
+}
+
+/* Flashlight + Custom Cursor */
+body {
+  background-color: #0d042a;
+  color: #fff;
+  overflow-x: hidden;
+  position: relative;
+  cursor: none;
+}
+
+html {
+  transition: background-color 0.5s, color 0.5s;
+}
+
+body {
+  transition: background-color 0.5s, color 0.5s;
+}
+
+
+/* Flashlight glow area */
+#flashlight {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(circle, #1E90FF 0%, rgba(255, 255, 255, 0.15) 40%);
+  mix-blend-mode: lighten;
+  filter: blur(30px);
+  transform: translate(-50%, -50%);
+  z-index: 9998;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+/* Visible pointer circle */
+#cursor-circle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: rgba(237, 146, 255, 0.9);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  box-shadow: 0 0 8px rgba(237, 146, 255, 0.382);
+  transition: transform 0.1s ease-out, width 0.2s ease, height 0.2s ease;
+}
+
+
+
+/* Normal cursor remains visible */
+html, body {
+  cursor: default;
+}
+
+/* Optional effect for link hover */
+a:hover, button:hover {
+  text-decoration: underline;
+}
+
+
+.subHead_1 {
+    margin-top: 75px;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 150px;
+    margin-left: 150px;
+    color:blue;
+    animation: slideIn 1s ease forwards;
+}
+
+.subHead_2 {
+    font-family: "Hammersmith One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 288px;
+    color: #87CEEB;
+    position: absolute;
+    margin: 55px;
+    top: 70px;
+    margin-left: 5px;
+    animation: fadeInUp 1.5s ease forwards;
+}
+
+.profilePic {
+    margin-top: 0px;
+    margin-left: 900px;
+    position: absolute;
+    border-radius: 600px 500px;
+    animation: slideIn 1s ease forwards;
+}
+
+.hr_1{
+    margin-top: 0%;
+    width: 400px;
+    background-color: black;
+    padding: 1px;
+    margin-left: 70px;
+    animation: fadeInUp 1.5s ease forwards;
+}
+
+.des {
+    margin-top: 210px;
+    margin-left: 150px;
+}
+
+.hiTit{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 180px;
+    margin-top: 20px;
+    animation: slideIn 1s ease forwards;
+}
+
+.tit_1 {
+    font-family: "Rowdies", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    animation: slideIn 1s ease forwards;
+}
+
+.tit_2 {
+    font-family: "Rowdies", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: blue;
+    animation: slideIn 1s ease forwards;
+}
+
+.abtSvg{
+    margin-top: 5px;
+    margin-left: 250px;
+    animation: slideIn 1s ease forwards;
+}
+
+.abtPara{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    animation: slideIn 1s ease forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(40px);
+        opacity: 0; /*Invisible at the start */
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1; /* Visible  the elements */
+    }   
+}
+
+.boxSize{
+    width: 1430px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+
+.ContactDiv {
+    position: relative;
+    display: inline-block;
+}
+
+.headTit_1 {
+    color: #87CEEB;
+    font-family: "Hammersmith One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    margin: 0;
+    margin-left:525px;
+    position: relative;
+    animation: slideIn 1s ease forwards;
+}
+
+.headTit_2 {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 50px;
+    position: absolute;
+    top: 15.5%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    color: blue;
+    white-space: nowrap;
+    animation: fadeInUp 1.5s ease forwards;
+}
+
+
+.inputField{
+    width: 420px;
+    margin-left: 70px;
+}
+
+.msgField{
+    width: 840px;
+    margin-left: 70px;
+}
+
+.contactMe{
+    margin-left: 60px;
+    margin-right: 60px;
+    gap: 50px;
+    box-shadow: 2px 2px 2px 5px rgba(0, 0, 0, 0.088);
+    border-radius: 10px;
+
+}
