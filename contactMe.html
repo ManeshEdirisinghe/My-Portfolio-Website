@@ -72,8 +72,9 @@
         <div class="w-full md:w-1/2 bg-[#1E2A38] text-gray-300 border border-gray-700 shadow-md rounded-lg p-8">
             <h2 class="text-xl font-semibold text-pink-400 mb-4">Contact details</h2>
             <address
-                class="bg-[#4c607e87] p-6 h-[20rem] rounded-lg border border-gray-600 not-italic grid grid-cols-2 gap-y-6 shadow-md">
-                <div class="space-y-6 text-pink-400 leading-loose hidden sm:block">
+                class="bg-[#4c607e87] p-6 rounded-lg border border-gray-600 not-italic grid grid-cols-1 sm:grid-cols-2 gap-y-6 shadow-md"
+                style="min-height: 20rem;">
+                <div class="space-y-6 text-pink-400 leading-loose">
                     <div class="flex items-center space-x-3">
                         <svg class="w-8 h-8 text-gray-300" fill="none" stroke="currentColor" stroke-width="2"
                             viewBox="0 0 24 24">
@@ -149,7 +150,7 @@
                     <label for="message"
                         class="block mb-2 text-xs font-medium text-gray-900 dark:text-white">Message</label>
                     <textarea id="message" rows="4"
-                        class="w-1/2 bg-[#f1f1f1] border border-gray-300 text-black text-xs rounded-lg focus:ring-pink-400 focus:border-pink-400 p-2 shadow-md"
+                        class="w-full bg-[#f1f1f1] border border-gray-300 text-black text-xs rounded-lg focus:ring-pink-400 focus:border-pink-400 p-2 shadow-md"
                         placeholder="Write your message here..." required></textarea>
                 </div>
 
@@ -267,6 +268,8 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
 
 </html>

@@ -235,5 +235,125 @@ a:hover, button:hover {
     gap: 50px;
     box-shadow: 2px 2px 2px 5px rgba(0, 0, 0, 0.088);
     border-radius: 10px;
+}
 
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .titDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .subHead_1 {
+        margin-left: 0;
+        margin-top: 100px;
+        font-size: clamp(50px, 10vw, 80px);
+    }
+
+    .subHead_2 {
+        position: relative;
+        top: 0;
+        margin: 10px 0;
+        font-size: clamp(70px, 15vw, 120px);
+        line-height: 1;
+    }
+
+    .profilePic {
+        position: relative;
+        margin: 20px auto 0;
+        margin-left: 0;
+        max-width: 280px;
+        width: 90%;
+        border-radius: 50%;
+    }
+
+    .des {
+        margin-top: 50px;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 0 15px;
+    }
+
+    .hr_1 {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hiTit {
+        text-align: center;
+        margin-left: 0;
+        font-size: 1.2rem;
+    }
+
+    .tit_1, .tit_2 {
+        font-size: clamp(1.5rem, 5vw, 2rem);
+    }
+
+    .abtSvg {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .abtPara {
+        text-align: center;
+        font-size: 0.95rem;
+    }
+
+    .boxSize {
+        width: 95%;
+        margin: 0 auto;
+        padding: 20px 10px;
+        border-radius: 10px;
+    }
+
+    .contactDiv {
+        padding: 20px 10px;
+    }
+
+    .headTit_1 {
+        font-size: clamp(40px, 10vw, 60px);
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .headTit_2 {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin-top: 10px;
+        font-size: clamp(25px, 6vw, 35px);
+        text-align: center;
+    }
+
+    .contactMe {
+        padding: 15px;
+        gap: 20px;
+        margin: 0 auto;
+        max-width: 95%;
+    }
+
+    .inputField {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .msgField {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    /* Hide custom cursor on mobile */
+    #flashlight,
+    #cursor-circle {
+        display: none;
+    }
+
+    body {
+        cursor: auto !important;
+    }
 }
